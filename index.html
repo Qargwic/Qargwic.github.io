@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Письма из прошлого</title>
+</head>
+<body>
+<div class="center">
+	<h1>Письма из прошлого</h1>
+	<div class="div-of-mail">
+		<ul class="row">
+			<li class="num"><a onclick="showMail('1')" href="#1">1</a></li>
+			<li class="num"><a onclick="showMail('2')"  href="#2">2</a></li>
+			<li class="num"><a onclick="showMail('3')"  href="#3">3</a></li>
+			<li class="num"><a onclick="showMail('4')"  href="#4">4</a></li>
+			<li class="num"><a onclick="showMail('5')"  href="#5">5</a></li>
+			<li class="num"><a onclick="showMail('6')"  href="#6">6</a></li>
+		</ul>
+		<ul class="row">
+			<li class="num"><a onclick="showMail('7')"  href="#7">7</a></li>
+			<li class="num"><a onclick="showMail('8')"  href="#8">8</a></li>
+			<li class="num"><a onclick="showMail('9')"  href="#9">9</a></li>
+			<li class="num"><a onclick="showMail('10')"  href="#10">10</a></li>
+			<li class="num"><a onclick="showMail('11')"  href="#11">11</a></li>
+			<li class="num"><a onclick="showMail('12')"  href="#12">12</a></li>
+		</ul>
+	</div>
+	<div class="text" id="hello-text">
+		<p>Я подготовил для тебя достаточно интересный проект. Тут представлено 12 писем. На каждый месяц моего отсутствия? Можно сказать, и так. Но привязка идет не к месяцам, а к датам. Какие-то более интересные и значимые, какие-то менее. Но самое интересное здесь другое: все они зашифрованы, а ключ для расшифровки или подсказка, как его получить, будет приходить тебе на почту в нужный день по настроенному расписанию.</p>
+		<p>Расшифровывать сообщения можно на этом <a href="http://webcrypt.org/ru#decryption">сайте</a>. Код для первого сообщения у тебя уже есть. Можешь попробовать догадаться сама, но, если лень, нажимай на <span id="hint" onclick="showHint()">подсказку</span>.</p>
+	</div>
+	<div class="text" id="mail-text">
+		<p id="mail-text-p"></p>
+	</div>
+</div>
+</body>
+<div id="hint-block" onclick="hide()"></div>
+<div id="hint-div" onclick="hide()"><img src="skull.png" alt="hint"></div>
+<script src="script.js"></script>
+</html>

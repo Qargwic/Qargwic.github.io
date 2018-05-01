@@ -1,0 +1,88 @@
+*{
+	font-family: Roboto;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: #404040;
+}
+h1{
+	font-weight: normal;
+	text-align: center;
+}
+.center{
+	max-width: 720px;
+	min-width: 372px;
+	margin: auto;
+	margin-top: 40px; 
+}
+.div-of-mail{
+	width: 372px;
+	height: 140px;
+	margin: auto;
+	margin-top: 30px;
+
+}
+.num{
+	list-style-type: none;
+	text-align: center;
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #bdbdbd;
+	margin: 0 10px;
+}
+.num a{
+	font-size: 15px;
+	display: block;
+	padding: 12px 0 13px 0;
+}
+.row{
+	display: block;
+	height: 42px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.text p{
+	font-size: 18px;
+	text-align: justify;
+	margin-bottom: 20px;
+	line-height: 1.4;
+	padding: 0 5px;
+}
+p{
+	word-wrap: break-word;
+}
+p a,p span{
+	color: #2196f3;
+	cursor: pointer;
+}
+#hint-block{
+	display: none;
+	position: absolute;
+	top: 0;
+	background-color: #101010;
+	opacity: 0.8;
+	width: 100%;
+	height: 100%;
+}
+#hint-div{
+	display: none;
+	background-color: white;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+}
+
+#mail-text{
+	display: none;
+	background-color: #131313;
+}
+#mail-text p{
+	color: #cecece;
+}

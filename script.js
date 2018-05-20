@@ -5,6 +5,8 @@ var helloBlock = document.getElementById("hello-text");
 var mailBlock = document.getElementById("mail-text");
 var mailText = document.getElementById("mail-text-p");
 var href = document.getElementById("a-block");
+var lis = document.getElementsByClassName("num");
+var lastObject = lis[0];
 
 var src = "http://webcrypt.org/ru";
 
@@ -22,11 +24,17 @@ function hide(){
 function closeMail(){
 	helloBlock.style.display = "block";
 	mailBlock.style.display = "none";
+	lastObject.style.backgroundColor = "#fdfdfd";
 }
 
 function showMail(file){
 	helloBlock.style.display = "none";
 	mailBlock.style.display = "block";
+	//нехороший код
+	lastObject.style.backgroundColor = "#fdfdfd";
+	lastObject = lis[file - 1];
+	lastObject.style.backgroundColor = "#ececec";
+
     var xhr= new XMLHttpRequest();
     xhr.open("GET", "https://qargwic.github.io/mails/" + file + ".txt", true);
     xhr.send();
